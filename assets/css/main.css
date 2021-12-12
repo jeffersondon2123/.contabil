@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
 
 :root {
   --primary:  rgba(21, 101, 216, 1);
+  --verde:  rgba(9, 117, 71, 1);
+  --verde-bg: rgba(9, 117, 71, 0.1);
 }
 
 html {
@@ -25,9 +27,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
-h1 {font-size: 3.052rem; margin-top: 0;}
-
-h2 {font-size: 2.441rem;}
+h1 {font-size: 3.052rem; font-weight: 600; margin-top: 0;}
 
 h3 {font-size: 1.953rem; font-weight: 500;}
 
@@ -167,11 +167,9 @@ ul {
   padding-top: 6rem;
 }
 
-.intro-text {
-  font-weight: 600;
-}
-
 .subtitle {
+  font-size: 1.250rem;
+  font-weight: 600;
   line-height: 2.25rem;
   margin: 2rem 0 5rem;
 }
@@ -188,7 +186,8 @@ ul {
 }
 
 .illustration img {
-  width: 80%;
+  width: 680px;
+  height: 510px;
 }
 
 .features {
@@ -198,8 +197,8 @@ ul {
 .badge-pill {
   display: inline-block;
   font-weight: 500;
-  background-color: rgba(54, 179, 126, 0.1);
-  color: #36B37E;
+  background-color: var(--verde-bg);
+  color: var(--verde);
   padding: .5rem 1rem;
   border-radius: 10rem;
 }
@@ -225,6 +224,11 @@ ul {
   background-color: rgba(21, 101, 216, 0.1);
 }
 
+.card-badge img {
+  width: 50px;
+  height: 50px;
+}
+
 .curve svg {
   vertical-align: middle;
 }
@@ -235,7 +239,7 @@ ul {
 
 .about {
   background: #f8fbff;
-  padding-top: 20rem;
+  padding: 15rem 0 8rem;
   margin-top: -170px;
 }
 
@@ -243,9 +247,14 @@ ul {
   max-width: 48%;
 }
 
+.illustration-left img {
+  width: 100%;
+  height: 100%;
+}
+
 .planning-img {
   margin-left: -100px;
-  width: 115%; 
+  width: 630px; 
 }
 
 .text-right {
@@ -267,6 +276,7 @@ ul {
 
 .card-feature-heading img {
   width: 32px;
+  height: 32px;
   padding: .5rem;
   border-radius: 8px;
   background-color: rgba(21, 101, 216, 0.1);
@@ -274,11 +284,6 @@ ul {
 
 .card-feature-body {
   margin-right: 1.5rem;
-}
-
-.card-feature-body h5 {
-  margin: 0.6rem 0;
-  font-weight: 600;
 }
 
 .card-item {
@@ -322,6 +327,7 @@ ul {
   width: 36px;
   height: 36px;
   font-weight: 600;
+  line-height: 1;
   color: white;
   background-color: rgba(21, 101, 216, 0.9);
   box-shadow: 0 10px 15px 0 rgb(21 37 71 / 15%);
@@ -337,11 +343,11 @@ ul {
   border-radius: 4px;
   height: 72px;
   transition: ease-in-out .3s;
+  will-change: background, color;
 }
 
 .profile-item:hover {
   background: var(--primary);
-  border: 1px solid var(--primary);
   color: white;
 }
 
@@ -407,8 +413,35 @@ ul {
   padding: 2px 5px;
 }
 
+footer {
+  background-color: #0D2436;
+  padding-top: 6rem;
+  text-align: center;
+  color: #fff;
+}
 
+.footer-text p {
+  margin: 0 auto;
+  width: 60%;
+}
 
+.contact-buttons {
+  padding: 4rem 0 8rem;
+}
+
+footer p {
+  padding-bottom: 1rem;
+}
+
+hr {
+  padding: 1rem 0;
+  border:  none;
+  border-top: 1px solid #7c92ab;
+}
+
+.copyright {
+  padding: 0 0 2rem;
+}
 
 
 
