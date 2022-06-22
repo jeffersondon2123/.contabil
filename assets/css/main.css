@@ -91,7 +91,7 @@ ul {
   background-color: #002868;
   height: 1000px;
   padding-top: 20px;
-  margin-bottom: -175px;
+  margin-bottom: -125px;
 }
 
 .navbar {
@@ -148,6 +148,10 @@ ul {
   padding: 8px 16px;
 }
 
+.btn-link:hover > .arrow-right {
+  transform: translate3d(8px, 0px, 0px);
+}
+
 .btn-outline {
   border: 1px solid;
   border-radius: 8px;
@@ -175,8 +179,11 @@ ul {
 }
 
 .arrow-right {
+  display: inline-block;
   padding-left: 0.5em;
   font-size: 1rem;
+  transition: all 200ms ease 0s;
+  transform: translate3d(0px, 0px, 0px);
 }
 
 .illustration {
@@ -240,7 +247,7 @@ ul {
 .about {
   background: #f8fbff;
   padding: 15rem 0 8rem;
-  margin-top: -170px;
+  margin-top: -140px;
 }
 
 .illustration-left {
