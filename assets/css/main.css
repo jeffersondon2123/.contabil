@@ -66,7 +66,7 @@ ul {
 }
 
 .col-large {
-  max-width: 933px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -97,9 +97,6 @@ ul {
 .navbar {
   margin: 0 auto 2rem;
   max-width: 1140px;
-  justify-content: space-between;
-  flex-flow: row nowrap;
-  align-items: center;
   padding: 0.5rem 1rem;
 }
 
@@ -192,8 +189,8 @@ ul {
 }
 
 .illustration img {
-  width: 40vw;
-  height: 30vw;
+  width: 45vw;
+  height: 35vw;
 }
 
 .features {
@@ -214,7 +211,7 @@ ul {
 }
 
 .content-item {
-  /* width: 33%; */
+  width: 33%;
 }
 
 .mini-card {
@@ -259,7 +256,7 @@ ul {
 }
 
 .planning-img {
-  margin-left: -100px;
+  margin-left: 80px;
   width: 630px;
 }
 
@@ -437,16 +434,6 @@ footer {
 
 footer p {
   padding-bottom: 1rem;
-}
-
-hr {
-  padding: 1rem 0;
-  border:  none;
-  border-top: 1px solid #7c92ab;
-}
-
-.copyright {
-  padding: 0 0 2rem;
 }
 
 
