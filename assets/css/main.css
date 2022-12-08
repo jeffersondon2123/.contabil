@@ -145,7 +145,6 @@ ul {
 .btn-link {
   text-decoration: none;
   color: var(--primary);
-  padding: 8px 16px;
 }
 
 .btn-link:hover > .arrow-right {
@@ -228,6 +227,12 @@ ul {
 
 .mini-card {
   padding: 0 2rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .card-badge {
@@ -476,11 +481,6 @@ footer p {
   }
   h4 {
     margin: 0.3rem 0;
-  }
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
   .btn-link{
     padding: 1rem;
