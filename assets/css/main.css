@@ -14,6 +14,7 @@ html {
   line-height: 1.75;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -107,13 +108,16 @@ ul {
   align-items: center;
 }
 
+.logo-link {
+  position: relative;
+  width: 160px;
+  height: 80px;
+}
+
 .navbar-logo {
-  display: inline-block;
-  margin-right: 1.2rem;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  text-decoration: none;
-  color: #fff;
+  position: absolute;
+  top: 4px;
+  height: 100%;
 }
 
 .navbar-collapse {
@@ -149,7 +153,7 @@ ul {
 }
 
 .btn-outline {
-  border: 1px solid;
+  border: 1.5px solid;
   border-radius: 8px;
   text-decoration: none;
   margin: 0 4px;
@@ -161,6 +165,11 @@ ul {
 .light {
   color: #fff;
   border-color: #fff;
+}
+
+.gold {
+  color: #F4BC28;
+  border-color: #F4BC28;
 }
 
 .hero {
@@ -191,7 +200,10 @@ ul {
 .illustration img {
   width: 45vw;
   height: 35vw;
+  max-width: 500px;
 }
+
+#about:target { scroll-margin-top: 64px;}
 
 .features {
   margin: 10rem 0;
@@ -366,42 +378,11 @@ ul {
   flex-grow: 1;
 }
 
-.collab-pic {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-gap: 1.2rem;
-}
-
-.collab-pic li {
-  border-radius: 4px;
-}
-
-.img-257 {
-  width: 200px;
-  height: 257px;
-  background-color: #f1af34;
-  align-self: flex-end;
-}
-
-.img-355 {
-  width: 262px;
-  height: 355px;
-  background-color: #8f7e44;
-}
-
-.img-166 {
-  width: 166px;
-  height: 166px;
-  background-color: #c3f4ca;
-  margin-left: 4rem;
-}
-
-.img-200 {
-  width: 200px;
-  height: 200px;
-  background-color: #f4fbb3;
-  margin-left: 2rem;
+.illustration-right > img {
+  width: 520px;
+  height: 380px;
+  object-fit: scale-down;
+  margin-top: 48px;
 }
 
 .about-item {
@@ -428,12 +409,31 @@ footer {
   width: 60%;
 }
 
+.logo-box {
+  position: relative;
+  height: 80px;
+}
+
+.footer-logo {
+  top: 4px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact-buttons {
   padding: 4rem 0 8rem;
 }
 
 footer p {
   padding-bottom: 1rem;
+}
+
+.big-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
 }
 
 
@@ -545,7 +545,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem 2rem 4rem;
+    padding: 2rem 1.5rem 4rem;
   }
   .contact-buttons .btn-outline {
     margin: 1rem 0;
