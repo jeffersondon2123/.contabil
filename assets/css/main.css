@@ -448,7 +448,7 @@ footer p {
 
 @media (max-width: 600px){
   .header {
-    height: 800px;
+    height: 850px;
     padding-top: 1rem;
     margin-bottom: -40px;
   }
@@ -462,9 +462,8 @@ footer p {
     font-size: 1rem;
     font-weight: 500;
   }
-  .illustration img{
-    height: 60vw;
-    width: 80vw;
+  .illustration{
+    display: none;
   }
   h3 {
     font-size: 1.6rem;
@@ -544,8 +543,9 @@ footer p {
   .contact-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 2rem 1.5rem 4rem;
+    flex-direction: column;
+    align-content: center;
   }
   .contact-buttons .btn-outline {
     margin: 1rem 0;
